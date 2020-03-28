@@ -23,7 +23,7 @@ void setup() {
     pinMode(greenLed,OUTPUT);
       Particle.variable("analogvalue", &analogValue, INT); // registering for particle variable
       Particle.function("manualValue",lightsensor); // registering for particle function to access from cloud
-      Time.zone(11);
+      Time.zone(11); //setting up correct timezone i.e Melbourne timezone GMT +11
     
 
 }
