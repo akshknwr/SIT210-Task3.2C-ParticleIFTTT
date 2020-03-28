@@ -54,7 +54,8 @@ void loop() {
      // value of light amount.      
     Particle.publish("lightValue",String(analogValue));
         
-    } else if (analogValue <100 ){
+    }
+     }else if (analogValue <100 ){
          // when light starts going away from plant turn off the LED
         digitalWrite(greenLed,LOW);
         
@@ -65,7 +66,7 @@ void loop() {
     }
     }
     
-    }
+    
    //check every 5 minutes 
 delay(50000);
  
